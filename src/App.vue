@@ -42,14 +42,14 @@
     import com_table from "./components/Table"
     import com_text from "./components/Text"
     import com_json from "./components/Json"
-
+    import  JSONbig from 'json-bigint'
     export default {
         name: 'app',
         mounted() {
             var tl = this;
             tl.loadConfig(function () {
                 tl.loadForm(function (result) {
-                    tl.menu_list = JSON.parse(result);
+                    tl.menu_list = JSONbig({"storeAsString": true}).parse(result);
                 })
             });
         },
@@ -72,7 +72,7 @@
                     dataType: 'text'
                 }).done(function (result) {
                     tl.loading = false;
-                    tl.config = JSON.parse(result);
+                    tl.config = JSONbig({"storeAsString": true}).parse(result);
                     callback()
                 }).fail(function () {
                     $('#formPage').html('Sorry, I could not retrieve the example!');
@@ -114,7 +114,7 @@
                     data: values,
                     success: function (result) {
                         tl.loading = false;
-                        tl.results = JSON.parse(result);
+                        tl.results = JSONbig({"storeAsString": true}).parse(result);
                     },
                     error: function (result) {
                         tl.loading = false;

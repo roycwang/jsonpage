@@ -18,7 +18,6 @@
                 </tr>
             </template>
         </vue-scrolling-table>
-        <!--<Table size="small" stripe border :columns="data.columnNames" :data="data.tableDatas"></Table>-->
     </div>
 </template>
 <script>
@@ -73,5 +72,9 @@
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+    }
+    td, th {
+        min-width: 10em !important;
+        max-width: 20em !important;
     }
 </style>
