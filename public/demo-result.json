@@ -1,0 +1,80 @@
+[
+  {
+    "data": "aaaaa",
+    "title": "FieldA",
+    "type": "text"
+  },
+  {
+    "data": "123",
+    "title": "FieldA",
+    "type": "text"
+  },
+  {
+    "data": {
+      "SubAfieldA": "JsonA",
+      "SubAfieldB": 12312312
+    },
+    "title": "FieldC",
+    "type": "json"
+  },
+  {
+    "data": {
+      "columnNames": [
+        {
+          "key": "SubAfieldA",
+          "title": "SubAfieldA"
+        },
+        {
+          "key": "SubAfieldB",
+          "title": "SubAfieldB"
+        }
+      ],
+      "tableDatas": [
+        {
+          "SubAfieldA": "SubAfieldA1",
+          "SubAfieldB": 111111111
+        },
+        {
+          "SubAfieldA": "SubAfieldA2",
+          "SubAfieldB": 222222222
+        },
+        {
+          "SubAfieldA": "SubAfieldA3",
+          "SubAfieldB": 333333333
+        }
+      ]
+    },
+    "title": "SubA",
+    "type": "table"
+  },
+  {
+    "data": {
+      "columnNames": [
+        {
+          "key": "SubBfieldA",
+          "title": "SubBfieldA"
+        },
+        {
+          "key": "SubBfieldB",
+          "title": "SubBfieldB"
+        }
+      ],
+      "tableDatas": [
+        {
+          "SubBfieldA": "SubTargetB1",
+          "SubBfieldB": 111111111
+        },
+        {
+          "SubBfieldA": "SubTargetB2",
+          "SubBfieldB": 222222222
+        },
+        {
+          "SubBfieldA": "SubTargetB3",
+          "SubBfieldB": 333333333
+        }
+      ]
+    },
+    "title": "SubB",
+    "type": "table"
+  }
+]

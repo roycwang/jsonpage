@@ -1,0 +1,71 @@
+[
+  {
+    "name": "demo",
+    "desc": "demo",
+    "schema": {
+      "FieldA": {
+        "title": "FieldA",
+        "type": "string"
+      },
+      "FieldB": {
+        "title": "FieldB",
+        "type": "string"
+      },
+      "FieldC": {
+        "enum": [
+          "aaa",
+          "aaaa",
+          "aaaaa"
+        ],
+        "title": "FieldC",
+        "type": "string"
+      }
+    }
+  },
+  {
+    "name": "demo1",
+    "desc": "demo1",
+    "schema": {
+      "FieldA": {
+        "title": "FieldA",
+        "type": "string"
+      },
+      "FieldB": {
+        "title": "FieldB",
+        "type": "string"
+      },
+      "FieldC": {
+        "enum": [
+          "bbb",
+          "bbbb",
+          "bbbbb"
+        ],
+        "title": "FieldC",
+        "type": "string"
+      }
+    }
+  },
+  {
+    "name": "demo2",
+    "desc": "demo2",
+    "schema": {
+      "FieldA": {
+        "title": "FieldA",
+        "type": "string"
+      },
+      "FieldB": {
+        "title": "FieldB",
+        "type": "string"
+      },
+      "FieldC": {
+        "enum": [
+          "ccc",
+          "cccc",
+          "ccccc"
+        ],
+        "title": "FieldC",
+        "type": "string"
+      }
+    }
+  }
+]

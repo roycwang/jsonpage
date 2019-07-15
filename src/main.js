@@ -9,12 +9,10 @@ import './deps/jquery.json-editor.min.js'
 import "./deps/opt/bootstrap.css"
 import "./deps/opt/bootstrap-wysihtml5.css"
 import "./deps/opt/spectrum.css"
-import lib from "./js/loadpage"
 
 
 Vue.config.productionTip = false;
 Vue.use(iView);
-Vue.mixin(lib);
 
 
 new Vue({

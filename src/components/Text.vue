@@ -1,12 +1,12 @@
 <template>
     <div>
         <Divider>{{title}}</Divider>
-        <Table stripe border :columns="data.columnNames" :data="data.tableDatas"></Table>
+        <span>{{data}}</span>
     </div>
 </template>
 <script>
     export default {
-        name: "com_table",
+        name: "com_text",
         props:["title","data"]
     }
 </script>
