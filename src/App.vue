@@ -82,7 +82,7 @@
                 var tl = this;
                 tl.loading = true;
                 $.ajax({
-                    url: tl.config.loadFormUrl,
+                    url: tl.config.loadUrl,
                     dataType: "text",
                 }).done(function (result) {
                     tl.loading = false;
@@ -108,7 +108,7 @@
                 var tl = this;
                 tl.loading = true;
                 $.ajax({
-                    url: tl.config.submitUrl,
+                    url: tl.curSchema.submit,
                     method: "POST",
                     dataType: "text",
                     data: values,

@@ -2,6 +2,7 @@
   {
     "name": "demo",
     "desc": "demo",
+    "submit":"demo-result.json",
     "schema": {
       "FieldA": {
         "title": "FieldA",
@@ -25,6 +26,7 @@
   {
     "name": "demo1",
     "desc": "demo1",
+    "submit":"demo-result.json",
     "schema": {
       "FieldA": {
         "title": "FieldA",
@@ -48,6 +50,7 @@
   {
     "name": "demo2",
     "desc": "demo2",
+    "submit":"demo-result.json",
     "schema": {
       "FieldA": {
         "title": "FieldA",

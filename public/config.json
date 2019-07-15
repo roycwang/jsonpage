@@ -1,4 +1,3 @@
 {
-  "loadFormUrl": "demo-form.json",
-  "submitUrl": "demo-result.json"
+  "loadUrl": "demo-form.json"
 }
