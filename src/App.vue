@@ -23,16 +23,18 @@
                 </Card>
             </Col>
             <Col span="18">
-                <Card :bordered="true">
-                    <div id="result" style="margin: 10px">
-                        <div v-for="(item,index) in results">
-                            <com_text v-if="item.type=='text'" v-bind:title="item.title" v-bind:data="item.data"/>
-                            <com_table v-if="item.type=='table'" v-bind:title="item.title" v-bind:data="item.data"/>
-                            <com_json v-if="item.type=='json'" v-bind:title="item.title" v-bind:data="item.data"
-                                      :id="index"/>
-                        </div>
-                    </div>
-                </Card>
+               <template v-if="change == 1">
+                   <Card :bordered="true">
+                       <div id="result" style="margin: 10px">
+                           <div v-for="(item,index) in results">
+                               <com_text v-if="item.type=='text'" v-bind:title="item.title" v-bind:data="item.data"/>
+                               <com_table v-if="item.type=='table'" v-bind:title="item.title" v-bind:data="item.data"/>
+                               <com_json v-if="item.type=='json'" v-bind:title="item.title" v-bind:data="item.data"
+                                         :id="index"/>
+                           </div>
+                       </div>
+                   </Card>
+               </template>
             </Col>
         </Row>
     </div>
@@ -60,6 +62,7 @@
                 results: [],
                 menu_list: [],
                 config: {},
+                change:0,
 
             }
         },
@@ -95,6 +98,8 @@
                 var tl = this;
                 tl.isMenueShow = false;
                 tl.curSchema = schema;
+                tl.results = [];
+                tl.change=1;
                 $('#formPage').html('');
                 // new JsonEditor('#json-display', tl.curCode, {});
                 tl.curSchema.onSubmitValid = function (values) {
@@ -107,6 +112,8 @@
             submit(values) {
                 var tl = this;
                 tl.loading = true;
+                tl.results = [];
+                tl.change=1;
                 $.ajax({
                     url: tl.curSchema.submit,
                     method: "POST",
